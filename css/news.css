@@ -1,0 +1,201 @@
+@import url(global.css);
+
+.navbar-link a.active-page {
+    text-shadow: 0 0 10px #E20D0D, 0 0 20px #E20D0D, 0 0 30px #E20D0D;
+    color: #ffffff;
+}
+.navbar-link a {
+    transition: all 0.3s ease;
+}
+
+.news-section{
+    background-color: rgb(249, 234, 211);
+    padding: 40px;
+    padding-top: 6rem;
+    background-color: #f2f2f2;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #213448;
+}
+  
+.news-container {
+    margin-top: 10vh;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+  
+  /* Kiri: Berita utama */
+.main-news {
+    background-color: #F5EEDD;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.main-news-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    color:black;
+    font-weight: bold;
+}
+
+.main-news-img{
+   align-self: center;
+   width: 100%;
+   height: auto;
+   margin-bottom: 16px;
+   border: 2px solid #213448;
+}
+
+.main-news-category {
+    font-size: 16px;
+    color: #E20D0D;
+    font-weight: bold;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+}
+  
+.main-news-desc {
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+  /* Kanan: Daftar berita kecil */
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.side-news-img{
+    width: 20vw;
+    height: auto;
+    object-fit:contain;
+    border: 2px solid #213448;
+}
+.news-kecil {
+    display: flex;
+    gap: 12px;
+    background-color: #F5EEDD;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+  
+.news-kecil:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+  
+.side-news-text {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 5px;
+}
+  
+.side-news-title {
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin: 0;
+}
+.side-news-category{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: #E20D0D;
+}
+.side-news-desc {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive untuk layar max-width: 1000px */
+@media (max-width: 1000px) {
+
+  .news-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-news {
+    width: 90%;
+  }
+
+  .main-news-img,
+  .main-news-title,
+  .main-news-category,
+  .main-news-desc {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-news-desc {
+    text-align: justify;
+  }
+
+  .news-list {
+    width: 100%;
+  }
+
+  .side-news-img {
+    width: 25vw;
+  }
+
+  .side-news-text {
+    width: auto;
+  }
+
+}
+
+/* Responsive untuk layar max-width: 600px */
+@media (max-width: 600px) {
+
+  .main-news-title {
+    font-size: 20px;
+  }
+
+  .main-news-desc {
+    font-size: 14px;
+  }
+
+  .news-kecil {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .side-news-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .side-news-text {
+    width: 100%;
+  }
+
+  .side-news-title {
+    font-size: 14px;
+  }
+
+  .side-news-desc {
+    font-size: 13px;
+  }
+
+  .news-list {
+    gap: 16px;
+  }
+  
+}

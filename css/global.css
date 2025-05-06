@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "Valorant";
+    src: url(/Assets/font/Valorant\ Font.ttf);
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(/Assets/font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(/Assets//font/Oswald-Regular.ttf);
+}
+@font-face{
+    font-family: 'Footer';
+    src: url(https://kit.fontawesome.com/your-fontawesome-kit.js)
+}
+@font-face {
+    font-family: 'Valorax';
+    src: url(/Assets/font/Valorax-lg25V.otf);
+}
+@font-face {
+    font-family: 'ModernWarfare';
+    src: url(/Assets/font/ModernWarfare-OV7KP.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+  
+.navbar {
+    font-family: 'Valorant', sans-serif;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* padding: 10px 20px; */
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 50px;
+    padding: 10px;
+}
+
+.navbar-link{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navbar-link a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-link a:hover {
+    color: #E20D0D;
+    transition: color 0.3s;
+    transform: scale(1.1);
+}
+
+.navbar .container-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+    padding: .5rem 2rem;
+}
+
+.nav-logo h1 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.navbar-ham {
+    display: none;
+}
+
+.view-more:hover {
+    background-color: #ff4444;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(217, 48, 48, 0.4);
+}
+
+.footer {
+    width: 100%;
+    max-width: 100%;
+    background-color: #111827;
+    color: white;    
+    text-align: center;
+}
+
+.footer-container {
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo {
+    width: 30px;
+    height: auto;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-family: 'ModernWarfare';
+    text-align: left;
+}
+
+.footer-social {
+    margin-top: 10px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+    transform: scale(1.1);
+}
+
+.footer-copy {
+    margin-top: 12px;
+    font-size: 14px;
+}
+@media screen and (max-width: 1000px) {
+    body{
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    footer{
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    .navbar{
+        height: 10vh;
+    }
+
+    .navbar-ham{
+        display: flex;
+        width: 30px;
+        height: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .navbar-ham span{
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .navbar-link{
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        justify-content: space-evenly;
+        top: 10vh;
+        right: -200px;
+        /* height: 250px; */
+        width: 150px;
+        padding: 1rem 0;
+    }
+
+    @keyframes slide-in {
+        from{right: -200px;}
+        to {right: 0;}
+    }
+
+    @keyframes slide-out {
+        from{right: 0px;}
+        to {right: -200px;}
+    }
+
+    .navbar-link.active{
+        animation: slide-in 0.5s both;
+    }
+
+    .navbar-link.inactive{
+        animation: slide-out 0.5s both;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        height: 12vh;
+    }
+
+    .navbar-link{
+        top: 12vh;
+    }
+
+    .footer-logo {
+        width: 36px;
+    }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-social img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+    footer{
+        width: 92%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+}

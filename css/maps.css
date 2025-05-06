@@ -1,0 +1,238 @@
+@import url(global.css);
+
+.navbar-link a.active-page {
+  text-shadow: 0 0 10px #E20D0D, 0 0 20px #E20D0D, 0 0 30px #E20D0D;
+  color: #ffffff;
+}
+.navbar-link a {
+  transition: all 0.3s ease;
+}
+
+.bg img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.blur{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.map-section {
+    max-width: 900px;
+    margin: 100px auto 50px;
+    padding: 20px;
+  }
+  
+.main-map {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+  
+.map-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  
+.map-image-container img {
+    width: 100%;
+    display: flex;
+    border-radius: 12px;
+}
+  
+.map-name {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    color: white;
+    font-size: 48px;
+    font-family: 'Valorax', sans-serif;
+    text-shadow: 0 0 10px #E20D0D, 0 0 20px #E20D0D, 0 0 30px #E20D0D;
+    animation: glow 2s ease-in-out infinite alternate;
+    letter-spacing: 10px;
+}
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #E20D0D, 0 0 10px #E20D0D;
+    }
+    to {
+      text-shadow: 0 0 20px #FF4C4C, 0 0 30px #FF4C4C;
+    }
+}
+  
+.thumbnail-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 1rem;
+    padding: 1rem 0;
+    justify-content: center;
+}
+  
+.thumbnail-slider img {
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+  
+.thumbnail-slider img:hover {
+    transform: scale(1.1);
+}
+  
+.thumbnail-slider img.clicked {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #E20D0D;
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+  
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+  
+.overlay-content {
+  background-color: rgba(0, 0, 0, 0.6); 
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: absolute;
+  color: white; 
+  font-family: 'Poppins';
+  font-size: 24px;
+}
+  
+.overlay-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; 
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+  
+.overlay-content p {
+  color: white;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+  
+
+@media screen and (max-width: 1000px) {
+  body{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+  }
+
+  .map-section{
+    margin: 0;
+    margin-bottom: 10vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .map-name {
+    font-size: 1.2rem;
+    right: 15px;
+    bottom: 10px;
+  }
+
+  .thumbnail-slider {
+    margin-top: 10px;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+  }
+
+  .thumbnail-slider img {
+    height: 60px;
+  }
+  .overlay {
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    position: fixed; 
+    width: 100%;
+    margin: auto;
+    z-index: 1000;
+    padding: 10px;
+  }
+  .overlay-content {
+    width: 90%; 
+    max-width: 400px; 
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .overlay-content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    z-index: 1000;
+  }
+  .overlay-content p {
+    font-size: 14px; 
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .close-btn {
+    font-size: 26px;
+    top: 10px;
+    right: 10px;
+  }
+}

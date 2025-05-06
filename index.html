@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="shortcut icon" href="Assets/Logo palorant Giot.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-navbar">
+            <div class="nav-logo">
+                <img src="Assets/Logo palorant Giot.png" alt="Logo" class="logo">
+                <h1>Palorant</h1>
+            </div>
+
+            <div class="navbar-link" id="navbar-link">
+                <a href="index.html" class="home active-page">HOME</a>
+                <a href="html/agents.html" class="agents">AGENTS</a>
+                <a href="html/maps.html" class="maps">MAPS</a>
+                <a href="html/news.html" class="news">NEWS</a>
+                <a href="html/report.html" class="report">REPORT</a>
+            </div>
+
+            <div class="navbar-ham" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="video-container">
+        <div class="blur"></div>
+        <video autoplay loop muted>
+            <source src="Assets/openingvideo.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-content">
+            <h1>Palorant</h1>
+        </div>
+    </div>
+    <div class="home-content">
+        <div class="home-text">
+            <h1>Palorant — Unleash Your Potential</h1>
+            <p>
+                Palorant is a competitive 5v5 character-based tactical shooter that blends precise gunplay with strategic teamplay and unique agent abilities. 
+                Each agent brings distinct skills to the battlefield, creating endless possibilities for coordinated plays and creative tactics. 
+                With a focus on sharp aim, smart positioning, and real-time communication, Palorant challenges players to think fast and act faster. 
+                Every match is a high-stakes battle of wits and reflexes, where every decision can shift the tide. 
+                Whether you're a casual player or climbing the competitive ladder, Palorant delivers a deep, rewarding experience where strategy meets skill at every round.
+            </p>
+        </div>
+        <img src="Assets/homepage.png" alt="" class="home-pic">
+    </div>
+    <div class="best-agent">
+        <img src="Assets/Zane.png" alt="" class="best-agent-pic">
+        <div class="best-agent-text">
+            <h1>The Heart of Team - Zane</h1>
+            <p>
+                Zane is more than just a healer — she’s the backbone of any strong team. 
+                With her unique ability to control the pace of the game, Zane brings unmatched utility through healing, revives, and defensive plays that can turn the tide of battle. 
+                Whether she’s bringing a fallen teammate back into the fight or holding the line with well-placed barriers and slows, 
+                Zane creates opportunities where none existed. Her presence brings stability and confidence to her team, making her an irreplaceable force in every round. 
+                In the hands of a skilled player, Sage isn’t just a support — she’s a game-changer.
+            </p>
+            <button class="view-more" onclick="location.href='agents.html'">View More</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img src="Assets/Logo palorant Giot (1).png" class="footer-logo">
+            <span class="footer-title">Giot<br>Games</span>
+          </div>
+          <div class="footer-social">
+                <img src="Assets/logo_ig.png" alt="">
+                <img src="Assets/logo_x.png" alt="">
+                <img src="Assets/logo_yt.png" alt="">
+          </div>
+          <div class="footer-copy">
+            &copy; 2025 Giot Games. All rights reserved.
+          </div>
+        </div>
+    </footer> 
+</body>
+<script src="../js/navbar.js"></script>
+</html>

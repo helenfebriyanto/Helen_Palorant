@@ -1,0 +1,255 @@
+@import url(global.css);
+
+.navbar-link a.active-page {
+    text-shadow: 0 0 10px #E20D0D, 0 0 20px #E20D0D, 0 0 30px #E20D0D;
+    color: #ffffff;
+}
+.navbar-link a {
+    transition: all 0.3s ease;
+}
+
+body{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+
+.blur {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.report-content {
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    width: 50vw;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.report-content h1{
+    color: #E20D0D;
+    font-family: 'Valorant';
+    text-align: center;
+}
+#form-report {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-report label {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+#form-report input,
+#form-report select,
+#form-report textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: #3c3b3b;
+    color: #ffffff;
+}
+
+#form-report textarea {
+    color: #ffffff;
+    resize: vertical;
+}
+
+#form-report button {
+    padding: 12px;
+    background-color: #E20D0D;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Valorant';
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+}
+
+#form-report button:hover {
+    background-color: #E20D0D;
+    color: white;
+    box-shadow: 0 0 20px #E20D0D;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'Valorant';
+    font-size: 24px;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-checkbox {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.checkbox-text{
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.success-overlay {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    margin-top: 5rem;
+}
+
+.success-overlay img {
+    filter: drop-shadow(0 0 1rem red);
+}
+
+.success-overlay.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hidden{
+    display: none;
+}
+
+.checkmark {
+    width: 20rem;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .report-content {
+        width: 70vw;
+        margin-top: 0;
+        margin-bottom: 10vh;
+        padding: 20px;
+    }
+    .blur{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .report-content h1 {
+        font-size: 28px;
+    }
+
+    #form-report label {
+        font-size: 16px;
+    }
+
+    #form-report input,
+    #form-report select,
+    #form-report textarea {
+        font-size: 14px;
+    }
+
+    #form-report button {
+        font-size: 20px;
+    }
+
+    footer{
+        position: absolute;
+    }
+}
+
+@media (max-width: 600px) {
+    .report-content {
+        width: 70%;
+        padding: 20px;
+        margin-top: 15vh;
+        justify-content: center;
+        border-radius: 16px;
+    }
+    .blur{
+        height: auto;
+        width: fit-content;
+    }
+    .report-content h1 {
+        font-size: 24px;
+    }
+
+    #form-report label {
+        font-size: 14px;
+    }
+
+    #form-report input,
+    #form-report select,
+    #form-report textarea {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    #form-report button {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .success-overlay{
+        margin-top: -10rem;
+    }
+
+    .checkmark {
+        width: 50%;
+        height: auto;
+    }
+
+    footer{
+        position: relative;
+    }
+}

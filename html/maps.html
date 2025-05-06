@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palorant Maps</title>
+  <link rel="stylesheet" href="../css/maps.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="shortcut icon" href="../Assets/Logo palorant Giot.png" type="image/x-icon">
+
+</head>
+<body>
+  <div class="background">
+    <div class="bg img">
+      <img src="../Assets/bg maps.jpg" alt="">
+    </div>
+    <div class="blur"></div>
+  </div>
+  <nav class="navbar">
+    <div class="container-navbar">
+      <div class="nav-logo">
+        <img src="../Assets/Logo palorant Giot.png" alt="Logo" class="logo" />
+        <h1>Palorant</h1>
+      </div>
+      <div class="navbar-link" id="navbar-link">
+        <a href="../index.html" class="home">HOME</a>
+        <a href="agents.html" class="agents">AGENTS</a>
+        <a href="maps.html" class="maps active-page">MAPS</a>
+        <a href="news.html" class="news">NEWS</a>
+        <a href="report.html" class="report">REPORT</a>
+      </div>
+      <div class="navbar-ham" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="map-section">
+    <div class="main-map">
+      <div class="map-image-container">
+        <img id="mainMapImage" src="../Assets/haven map.png" alt="Heaven" data-id="haven" />
+        <h1 class="map-name" id="mainMapName">Heaven</h1>
+      </div>
+    </div>
+    <div class="thumbnail-slider" id="thumbnailSlider">
+      <img src="../Assets/haven map.png" alt="Heaven" data-name="Heaven" data-id="haven" />
+      <img src="../Assets/icebox map.png" alt="Snowbox" data-name="Snowbox" data-id="icebox" />
+      <img src="../Assets/sunset map.png" alt="Sunrise" data-name="Sunrise" data-id="sunrise" />
+      <img src="../Assets/breeze map.png" alt="Breezy" data-name="Breezy" data-id="breeze" />
+      <img src="../Assets/lotus map.png" alt="Orchid" data-name="Orchid" data-id="lotus" />
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <span class="close-btn" id="closeOverlay">&times;</span>
+      <img id="overlayImage" src="" alt="Overlay Map" />
+      <p id="overlayDescription"></p>
+      <div class="gallery" id="overlayGallery"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="../Assets/Logo palorant Giot (1).png" class="footer-logo">
+        <span class="footer-title">Giot<br>Games</span>
+      </div>
+      <div class="footer-social">
+            <img src="../Assets/logo_ig.png" alt="">
+            <img src="../Assets/logo_x.png" alt="">
+            <img src="../Assets/logo_yt.png" alt="">
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 Giot Games. All rights reserved.
+      </div>
+    </div>
+</footer> 
+</body>
+<script src="../js/maps.js"></script>
+<script src="../js/navbar.js"></script>
+</html>

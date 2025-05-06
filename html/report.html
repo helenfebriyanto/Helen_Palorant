@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/report.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="shortcut icon" href="../Assets/Logo palorant Giot.png" type="image/x-icon">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-navbar">
+            <div class="nav-logo">
+                <img src="../Assets/Logo palorant Giot.png" alt="Logo" class="logo">
+                <h1>Palorant</h1>
+            </div>
+
+            <div class="navbar-link" id="navbar-link">
+                <a href="../index.html" class="home">HOME</a>
+                <a href="agents.html" class="agents">AGENTS</a>
+                <a href="maps.html" class="maps">MAPS</a>
+                <a href="news.html" class="news">NEWS</a>
+                <a href="report.html" class="report active-page">REPORT</a>
+            </div>
+
+            <div class="navbar-ham" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="background">
+        <img src="../Assets/background report.jpg" alt="REPORT" class="background-image">
+        <div class="blur"></div>
+    </div>
+
+    <div class="report-content">
+       <h1>Report Form</h1>
+       <form id="form-report">
+        <label for="username">Username : </label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email : </label>
+        <input type="text" name="email" id="email" required>
+
+        <label for="server">Server : </label>
+        <select id="server" name="server" required>
+            <option value="">Select Server</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <label for="details">Details : </label>
+        <textarea id="details" name="details" rows="5" required></textarea>
+
+        <div class="form-checkbox">
+            <input type="checkbox" id="agree" name="agree">
+            <p for="agree" class="checkbox-text">I agree to the Terms and Conditions and consent to receive follow-up emails regarding this report.</p>
+        </div>
+
+        <button type="submit">Report</button>
+       </form>
+    </div>
+    <div id="success-overlay" class="success-overlay hidden">
+        <img src="../Assets/checkmark.png" alt="Success" class="checkmark">
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img src="../Assets/Logo palorant Giot (1).png" class="footer-logo">
+            <span class="footer-title">Giot<br>Games</span>
+          </div>
+          <div class="footer-social">
+                <img src="../Assets/logo_ig.png" alt="">
+                <img src="../Assets/logo_x.png" alt="">
+                <img src="../Assets/logo_yt.png" alt="">
+          </div>
+          <div class="footer-copy">
+            &copy; 2025 Giot Games. All rights reserved.
+          </div>
+        </div>
+    </footer> 
+</body>
+<script src="../js/navbar.js"></script>
+<script src="../js/report.js"></script>
+</html>

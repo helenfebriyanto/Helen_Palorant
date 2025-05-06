@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/agents.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="shortcut icon" href="../Assets/Logo palorant Giot.png" type="image/x-icon">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container-navbar">
+      <div class="nav-logo">
+              <img src="../Assets/Logo palorant Giot.png" alt="Logo" class="logo">
+              <h1>Palorant</h1>
+      </div>
+      <div class="navbar-link" id="navbar-link">
+        <a href="../index.html" class="home">HOME</a>
+        <a href="agents.html" class="agents active-page">AGENTS</a>
+        <a href="maps.html" class="maps">MAPS</a>
+        <a href="news.html" class="news">NEWS</a>
+        <a href="report.html" class="report">REPORT</a>
+      </div>
+      <div class="navbar-ham" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+  </nav>
+
+  <div class="agents-opening">
+     <video autoplay muted loop class="agents-bg">
+        <source src="../Assets/agent video.mp4" type="video/mp4" />
+      </video>
+      <div class="blur"></div>
+      <div class="agents-overlay">
+        <h1>Meet The Agents</h1>
+        <p>Discover unique abilities, roles, and playstyles. Choose your fighter.</p>
+        <button class="explore-btn" onclick="document.getElementById('agent-section').scrollIntoView({ behavior: 'smooth' });">Explore Agents</button>
+      </div>
+    </div>
+
+    <section class="agent-section" id="agent-section">
+      <div class="muka-agent">
+        <img src="../Assets/face sage.svg" alt="" class="kepala-agent">
+        <img src="../Assets/face nova.svg" alt="" class="kepala-agent">
+        <img src="../Assets/face oman.svg" alt="" class="kepala-agent">
+        <img src="../Assets/face jetz.svg" alt="" class="kepala-agent">
+        <img src="../Assets/face vaper.svg" alt="" class="kepala-agent">
+      </div>
+      <div class="agent"> 
+        <img src="../Assets/Zane.png" alt="Sage" class="agent-img">
+        <div class="agent-desc">
+            <h2 class="agent-name">Zane</h2>
+            <div class="agent-role">
+              <img src="../Assets/Sentinel.png" alt="" class="role-logo">
+              <p class="role-hero">Sentinel</p>
+            </div>
+            <p class="agent-description">Zane is the backbone of any team, creating safety wherever she steps. With her healing abilities and defensive barriers, she can turn the tide of battle in an instant. She revives fallen teammates and slows enemy advances. In the chaos of the fight, Zane brings calm and control.</p>
+            <div class="agent-skill">
+              <img src="../Assets/Barrier_Orb.png" alt="" class="skill">
+              <img src="../Assets/Slow_Orb.png" alt="" class="skill">
+              <img src="../Assets/Healing_Orb.png" alt="" class="skill">
+              <img src="../Assets/Resurrection.png" alt="" class="skill">
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img src="../Assets/Logo palorant Giot (1).png" class="footer-logo">
+            <span class="footer-title">Giot<br>Games</span>
+          </div>
+          <div class="footer-social">
+                <img src="../Assets/logo_ig.png" alt="">
+                <img src="../Assets/logo_x.png" alt="">
+                <img src="../Assets/logo_yt.png" alt="">
+          </div>
+          <div class="footer-copy">
+            &copy; 2025 Giot Games. All rights reserved.
+          </div>
+        </div>
+    </footer> 
+</body>
+<script src="../js/agents.js"></script>
+<script src="../js/navbar.js"></script>
+</html>
